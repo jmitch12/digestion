@@ -1,0 +1,117 @@
+html{
+	margin: 0;
+}
+
+body{
+	width:100vw;
+	margin: 0;
+	background-color: white;
+}
+
+header{ 
+	position: absolute;
+	top:0;
+	width:100vw; /*viewport width, moves with the size of page. height= 100 vh*/
+	height:100px;
+	background-color: #fdc364;
+	z-index: 1;
+	/*background-color: white; #fdc364*/
+}
+
+header nav{
+	float:right; /*positions the element to the right*/
+	width: 240px;
+	margin-top: 38px;
+
+
+	/*margin:35px 20px;*/ /*(top,right,bottom,left)*/
+}
+
+header nav a{
+	padding-right: 15px;
+	width: 25%;
+	height:25%;
+	text-decoration: none;
+	color:indianred;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+}
+
+header nav a:hover{
+	text-decoration: none;
+	color:white;
+}
+
+#title{
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+#title h1{
+	margin-top: 25px;
+	color: indianred;
+	font-size: 38px;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 2px;
+}
+
+#title{
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+#title h1{
+	margin-top: 25px;
+	color: indianred;
+	font-size: 38px;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 2px;
+}
+
+.video {
+	position: absolute;
+	margin-top: 100px;
+	margin-right: 0;
+    z-index: -99;
+}
+
+video{
+	width: 100vw;
+}
+#intro{
+	position: absolute;
+	width: 100vw;
+	height: 225px;
+	background-color: indianred;
+	margin-top: 850px;
+
+}
+#intro p{
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 28px;
+	color: white;
+	text-align: center;
+}
+.btn {
+  background: white;
+  width: 10vw;
+  height:45px;
+  border-radius: 28px;
+  font-family: 'Fjalla One', sans-serif;
+  color: indianred;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-style: none;
+  position:absolute;
+  top:983px;
+  right: 45vw;
+}
+
+.btn:hover {
+  background: #fdc364;
+  text-decoration: none;
+}
