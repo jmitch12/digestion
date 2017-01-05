@@ -1,0 +1,695 @@
+    html {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    /*viewport width, moves with the size of page. height= 100 vh*/
+    height: 100px;
+    background-color: #fdc364;
+    z-index: 1;
+    /*background-color: white; #fdc364*/
+}
+
+header nav {
+    float: right;
+    /*positions the element to the right*/
+    width: 240px;
+    margin-top: 38px;
+    /*margin:35px 20px;*/
+    /*(top,right,bottom,left)*/
+}
+
+header nav a {
+    padding-right: 15px;
+    width: 25%;
+    height: 25%;
+    text-decoration: none;
+    color: indianred;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#title {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#title h1 {
+    margin-top: 25px;
+    color: indianred;
+    font-size: 38px;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+}
+
+#eat {
+    background-color: white;
+    position: absolute;
+    color: indianred;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#start {
+    position: absolute;
+    top: 150px;
+    /*margin-left: 150px;*/
+    background-color: #4a4948;
+    width: 35vw;
+    height: 135px;
+}
+
+#start h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-left: 195px;
+}
+
+#click {
+    position: absolute;
+    top: 215px;
+    /*margin-left: 150px;*/
+    width: 40vw;
+    height: 125px;
+}
+
+#click h5 {
+    font-family: 'Fjalla One', sans-serif;
+    color: indianred;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 160px;
+}
+
+#toaster {
+    position: absolute;
+    top: 649px;
+    margin-left: 100px;
+}
+
+#toaster img {
+    width: 29vw;
+}
+
+#head {
+    position: absolute;
+    top: 146px;
+    right: 10vw;
+}
+
+#inside {
+    position: absolute;
+    top: 146px;
+    right: 10vw;
+    display: none;
+}
+
+#toast {
+    position: absolute;
+    top: 400px;
+    margin-left: 175px;
+    animation-name: toastdance;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transition: all 500ms cubic-bezier(0.950, 0.050, 0.795, 0.035);
+    /* easeInExpo */
+}
+
+#toast img {
+    width: 15vw;
+}
+
+#toast img:hover {
+    opacity: .5;
+}
+
+#one {
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    width: 25vw;
+    margin-left: 250px;
+    display: none;
+}
+
+#one h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#one p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#two {
+    position: absolute;
+    top: 450px;
+    z-index: 1;
+    width: 25vw;
+    margin-left: 250px;
+    display: none;
+}
+
+#two h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#two p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#epiglottis {
+    position: absolute;
+    top: 585px;
+    z-index: 1;
+    width: 25vw;
+    margin-left: 250px;
+    display: none;
+}
+
+#epiglottis h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#epiglottis p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#three {
+    position: absolute;
+    top: 950px;
+    z-index: 1;
+    width: 25vw;
+    margin-left: 370px;
+}
+
+#three h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#three p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#peristalsis {
+    position: absolute;
+    top: 1400px;
+    z-index: 1;
+    width: 25vw;
+    margin-left: 370px;
+}
+
+#peristalsis h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#peristalsis p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#sphincter {
+    position: absolute;
+    top: 1760px;
+    z-index: 1;
+    width: 35vw;
+    margin-left: 370px;
+}
+
+#sphincter h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#sphincter p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#acid {
+    position: absolute;
+    top: 2202px;
+    margin-left: 45.9vw;
+}
+
+#pancreas {
+    position: absolute;
+    top: 2290px;
+    margin-left: 35vw;
+}
+
+#pancreas img {
+    width: 45vw;
+}
+
+#liver {
+    position: absolute;
+    top: 1900px;
+    margin-left: 200px;
+}
+
+#liver img {
+    width: 42vw;
+}
+
+#four {
+    position: absolute;
+    top: 1963px;
+    z-index: 1;
+    width: 25vw;
+    margin-left: 600px;
+}
+
+#four h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#four p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#five {
+    position: absolute;
+    top: 2150px;
+    z-index: 1;
+    width: 18vw;
+    margin-left: 150px;
+}
+
+#five h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#five p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#accesory {
+    position: absolute;
+    top: 2385px;
+    z-index: 1;
+    width: 20vw;
+    margin-left: 70px;
+}
+
+#accesory h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#accesory p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#si {
+    position: absolute;
+    top: 2990px;
+    z-index: 1;
+    width: 38vw;
+    margin-left: 550px;
+}
+
+#si h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#si p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#si ol li {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#li {
+    position: absolute;
+    top: 4080px;
+    z-index: 1;
+    width: 20vw;
+    margin-left: 450px;
+}
+
+#li h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#li p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#colon {
+    position: absolute;
+    top: 4550px;
+    z-index: 1;
+    width: 20vw;
+    margin-left: 400px;
+}
+
+#colon h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#colon p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#rectum {
+    position: absolute;
+    top: 5200px;
+    z-index: 1;
+    width: 26vw;
+    margin-left: 250px;
+}
+
+#rectum h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#rectum p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#anus {
+    position: absolute;
+    top: 5350px;
+    z-index: 1;
+    width: 26vw;
+    margin-left: 860px;
+}
+
+#anus h1 {
+    color: #fdc364;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#anus p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#final {
+    position: absolute;
+    top: 5670px;
+    z-index: 1;
+    width: 22vw;
+    margin-left: 155px;
+}
+
+#final h1 {
+    color: #fdc364;
+    font-size: 35px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: -5px;
+    /*margin-left: 100px;*/
+}
+
+#final p {
+    color: white;
+    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#toast2 {
+    position: absolute;
+    top: 550px;
+    margin-left: 68.5vw;
+    display: none;
+}
+
+#toast2 img {
+    width: 4vw;
+}
+
+#toast3 {
+    position: absolute;
+    top: 1400px;
+    margin-left: 67vw;
+    z-index: 1;
+}
+
+#toast3 img {
+    width: 8vw;
+}
+
+#toast4 {
+    position: absolute;
+    top: 2139px;
+    margin-left: 66vw;
+}
+
+#toast4 img {
+    width: 10vw;
+}
+
+#toast5 {
+    position: absolute;
+    top: 2850px;
+    margin-left: 29vw;
+}
+
+#toast5 img {
+    width: 8vw;
+}
+
+#toast6 {
+    position: absolute;
+    top: 3655px;
+    margin-left: 45vw;
+}
+
+#toast6 img {
+    width: 13vw;
+}
+
+#toast7 {
+    position: absolute;
+    top: 4600px;
+    margin-left: 83vw;
+}
+
+#toast7 img {
+    width: 10vw;
+}
+
+#turd {
+    position: absolute;
+    top: 5250px;
+    margin-left: 54vw;
+}
+
+#turd img {
+    width: 7vw;
+}
+
+#toast8 {
+    position: absolute;
+    top: 5600px;
+    margin-left: 49vw;
+}
+
+#toast8 img {
+    width: 18vw;
+}
+
+#gi {
+    position: absolute;
+    top: 800px;
+    right: -.1vw;
+    padding-right: 31px;
+    display: none;
+}
+
+#toilet {
+    position: absolute;
+    top: 5630px;
+    right: 18vw;
+}
+
+#toilet img {
+    width: 40vw;
+}
+
+.btn {
+    background: white;
+    width: 24vw;
+    height: 45px;
+    border-radius: 28px;
+    font-family: 'Fjalla One', sans-serif;
+    color: #fdc364;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-style: none;
+    position: absolute;
+    top: 5880px;
+    right: 65vw;
+}
+
+.btn:hover {
+    background: indianred;
+    text-decoration: none;
+}
+
+
+/*#stomach{
+	position: absolute;
+	top:1670px;
+	right:7.3vw;
+	display: none;
+}
+#duodenum{
+	position: absolute;
+	top:2468px;
+	right:61.6vw;
+	display:none;
+}
+#ileum{
+	position: absolute;
+	top:2470px;
+	right:10.1vw;
+	display:none;
+}*/
+
+.parallax-window {
+    position: relative;
+    /*top: 5px;*/
+    width: 100vw;
+    background: transparent;
+    z-index: -98;
+}
+
+.parallax-window img {
+    top: -100px;
+    width: 100vw;
+    z-index: -98;
+}
+
+.background {
+    position: relative;
+    top: -3675px;
+    width: 100vw;
+    z-index: -99;
+}
+
+.bottom {
+    top: -4239px;
+    position: relative;
+    width: 100vw;
+    z-index: -98;
+}
+
+@keyframes toastdance {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(135deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
