@@ -1,4 +1,4 @@
-    html {
+html {
     margin: 0;
 }
 
@@ -9,17 +9,9 @@ body {
     background-color: white;
 }
 
-#eat {
-    background-color: white;
-    position: absolute;
-    color: indianred;
-    font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;
-}
-
 #start {
     position: absolute;
-    top: 150px;
+    top: 90px;
     /*margin-left: 150px;*/
     background-color: #4a4948;
     width: 35vw;
@@ -36,47 +28,24 @@ body {
 
 #click {
     position: absolute;
-    top: 215px;
+    top: 345px;
     /*margin-left: 150px;*/
-    width: 40vw;
+    width: 20vw;
     height: 125px;
 }
 
 #click h5 {
     font-family: 'Fjalla One', sans-serif;
-    color: indianred;
+    color: white;
     font-size: 15px;
     letter-spacing: 2px;
-    padding-left: 160px;
-}
-
-#toaster {
-    position: absolute;
-    top: 649px;
-    margin-left: 100px;
-}
-
-#toaster img {
-    width: 29vw;
-}
-
-#head {
-    position: absolute;
-    top: 146px;
-    right: 10vw;
-}
-
-#inside {
-    position: absolute;
-    top: 146px;
-    right: 10vw;
-    display: none;
+    padding-left: 65px;
 }
 
 #toast {
     position: absolute;
-    top: 400px;
-    margin-left: 175px;
+    top: 300px;
+    margin-left: 200px;
     animation-name: toastdance;
     animation-duration: 5s;
     animation-delay: 1s;
@@ -84,7 +53,6 @@ body {
     animation-direction: alternate;
     animation-timing-function: linear;
     transition: all 500ms cubic-bezier(0.950, 0.050, 0.795, 0.035);
-    /* easeInExpo */
 }
 
 #toast img {
@@ -95,12 +63,35 @@ body {
     opacity: .5;
 }
 
+#toaster {
+    position: absolute;
+    top: 550px;
+    margin-left: 100px;
+}
+
+#toaster img {
+    width: 29vw;
+}
+
+#head {
+    position: absolute;
+    top: 48px;
+    right: 10vw;
+}
+
+#inside {
+    position: absolute;
+    top: 48px;
+    right: 10vw;
+    display: none;
+}
+
 #one {
     position: absolute;
-    top: 300px;
+    top: 250px;
     z-index: 1;
     width: 25vw;
-    margin-left: 250px;
+    margin-left: 225px;
     display: none;
 }
 
@@ -120,10 +111,10 @@ body {
 
 #two {
     position: absolute;
-    top: 450px;
+    top: 400px;
     z-index: 1;
     width: 25vw;
-    margin-left: 250px;
+    margin-left: 225px;
     display: none;
 }
 
@@ -143,10 +134,10 @@ body {
 
 #epiglottis {
     position: absolute;
-    top: 585px;
+    top: 525px;
     z-index: 1;
     width: 25vw;
-    margin-left: 250px;
+    margin-left: 225px;
     display: none;
 }
 
@@ -166,7 +157,7 @@ body {
 
 #three {
     position: absolute;
-    top: 950px;
+    top: 850px;
     z-index: 1;
     width: 25vw;
     margin-left: 370px;
@@ -188,7 +179,7 @@ body {
 
 #peristalsis {
     position: absolute;
-    top: 1400px;
+    top: 1300px;
     z-index: 1;
     width: 25vw;
     margin-left: 370px;
@@ -210,7 +201,7 @@ body {
 
 #sphincter {
     position: absolute;
-    top: 1760px;
+    top: 1660px;
     z-index: 1;
     width: 35vw;
     margin-left: 370px;
@@ -232,13 +223,13 @@ body {
 
 #acid {
     position: absolute;
-    top: 2202px;
+    top: 2102px;
     margin-left: 45.9vw;
 }
 
 #pancreas {
     position: absolute;
-    top: 2290px;
+    top: 2190px;
     margin-left: 35vw;
 }
 
@@ -248,7 +239,7 @@ body {
 
 #liver {
     position: absolute;
-    top: 1900px;
+    top: 1800px;
     margin-left: 200px;
 }
 
@@ -258,7 +249,7 @@ body {
 
 #four {
     position: absolute;
-    top: 1963px;
+    top: 1863px;
     z-index: 1;
     width: 25vw;
     margin-left: 600px;
@@ -280,7 +271,7 @@ body {
 
 #five {
     position: absolute;
-    top: 2150px;
+    top: 2050px;
     z-index: 1;
     width: 18vw;
     margin-left: 150px;
@@ -302,7 +293,7 @@ body {
 
 #accesory {
     position: absolute;
-    top: 2385px;
+    top: 2285px;
     z-index: 1;
     width: 20vw;
     margin-left: 70px;
@@ -324,7 +315,7 @@ body {
 
 #si {
     position: absolute;
-    top: 2990px;
+    top: 2890px;
     z-index: 1;
     width: 38vw;
     margin-left: 550px;
@@ -352,7 +343,7 @@ body {
 
 #li {
     position: absolute;
-    top: 4080px;
+    top: 3980px;
     z-index: 1;
     width: 20vw;
     margin-left: 450px;
@@ -374,7 +365,7 @@ body {
 
 #colon {
     position: absolute;
-    top: 4550px;
+    top: 4450px;
     z-index: 1;
     width: 20vw;
     margin-left: 400px;
@@ -396,7 +387,7 @@ body {
 
 #rectum {
     position: absolute;
-    top: 5200px;
+    top: 5100px;
     z-index: 1;
     width: 26vw;
     margin-left: 250px;
@@ -418,7 +409,7 @@ body {
 
 #anus {
     position: absolute;
-    top: 5350px;
+    top: 5250px;
     z-index: 1;
     width: 26vw;
     margin-left: 860px;
@@ -440,7 +431,7 @@ body {
 
 #final {
     position: absolute;
-    top: 5670px;
+    top: 5570px;
     z-index: 1;
     width: 22vw;
     margin-left: 155px;
@@ -462,7 +453,7 @@ body {
 
 #toast2 {
     position: absolute;
-    top: 550px;
+    top: 450px;
     margin-left: 68.5vw;
     display: none;
 }
@@ -473,7 +464,7 @@ body {
 
 #toast3 {
     position: absolute;
-    top: 1400px;
+    top: 1300px;
     margin-left: 67vw;
     z-index: 1;
 }
@@ -484,7 +475,7 @@ body {
 
 #toast4 {
     position: absolute;
-    top: 2139px;
+    top: 2039px;
     margin-left: 66vw;
 }
 
@@ -494,7 +485,7 @@ body {
 
 #toast5 {
     position: absolute;
-    top: 2850px;
+    top: 2750px;
     margin-left: 29vw;
 }
 
@@ -504,7 +495,7 @@ body {
 
 #toast6 {
     position: absolute;
-    top: 3655px;
+    top: 3555px;
     margin-left: 45vw;
 }
 
@@ -514,7 +505,7 @@ body {
 
 #toast7 {
     position: absolute;
-    top: 4600px;
+    top: 4500px;
     margin-left: 83vw;
 }
 
@@ -524,7 +515,7 @@ body {
 
 #turd {
     position: absolute;
-    top: 5250px;
+    top: 5150px;
     margin-left: 54vw;
 }
 
@@ -534,7 +525,7 @@ body {
 
 #toast8 {
     position: absolute;
-    top: 5600px;
+    top: 5500px;
     margin-left: 49vw;
 }
 
@@ -544,7 +535,7 @@ body {
 
 #gi {
     position: absolute;
-    top: 800px;
+    top: 700px;
     right: -.1vw;
     padding-right: 31px;
     display: none;
@@ -552,7 +543,7 @@ body {
 
 #toilet {
     position: absolute;
-    top: 5630px;
+    top: 5530px;
     right: 18vw;
 }
 
@@ -560,6 +551,7 @@ body {
     width: 40vw;
 }
 
+/*RESTART BUTTON*/
 .btn {
     background: white;
     width: 24vw;
@@ -572,7 +564,7 @@ body {
     text-decoration: none;
     border-style: none;
     position: absolute;
-    top: 5880px;
+    top: 5780px;
     right: 65vw;
 }
 
@@ -601,9 +593,9 @@ body {
 	display:none;
 }*/
 
+/*BACKGROUND IMAGES*/
 .parallax-window {
     position: relative;
-    /*top: 5px;*/
     width: 100vw;
     background: transparent;
     z-index: -98;
@@ -612,6 +604,7 @@ body {
 .parallax-window img {
     top: -100px;
     width: 100vw;
+    height: 104vh;
     z-index: -98;
 }
 
@@ -619,16 +612,25 @@ body {
     position: relative;
     top: -3675px;
     width: 100vw;
-    z-index: -99;
+    z-index: -100;
+}
+
+.background img{
+    width: 100vw;
 }
 
 .bottom {
     top: -4239px;
     position: relative;
     width: 100vw;
-    z-index: -98;
+    z-index: -90;
 }
 
+.bottom img{
+    width: 100vw;
+}
+
+/*SPINNING TOAST ANIMATION*/
 @keyframes toastdance {
     0% {
         transform: rotate(0deg);
